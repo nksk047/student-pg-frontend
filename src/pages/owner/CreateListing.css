@@ -1,0 +1,78 @@
+.create-listing-container {
+    min-height: 100vh;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .create-listing-form {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    animation: slideIn 0.5s ease;
+  }
+  
+  .create-listing-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .create-listing-form input,
+  .create-listing-form select {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: border 0.2s ease;
+  }
+  
+  .create-listing-form input:focus,
+  .create-listing-form select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .create-listing-form button {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.8rem;
+    background: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .create-listing-form button:hover {
+    background: #0056b3;
+  }
+  
+  .form-message {
+    text-align: center;
+    font-weight: 500;
+    color: #28a745;
+    margin-bottom: 1rem;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

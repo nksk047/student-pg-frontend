@@ -1,0 +1,94 @@
+.owner-dashboard {
+    padding: 2rem;
+    background: #f0f4f8;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  .owner-dashboard h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+  }
+  
+  .verification-status {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .verification-status.pending {
+    background: #fff3cd;
+    color: #856404;
+  }
+  
+  .verification-status.approved {
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  .verification-status.rejected {
+    background: #f8d7da;
+    color: #721c24;
+  }
+  
+  .verification-status.not {
+    background: #e2e3e5;
+    color: #383d41;
+  }
+  
+  .pg-list-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  }
+  
+  .pg-list-section h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .pg-owner-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.2rem;
+  }
+  
+  .pg-owner-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    animation: fadeInUp 0.5s ease;
+  }
+  
+  .pg-owner-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .pg-owner-card h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .pg-owner-card .small {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

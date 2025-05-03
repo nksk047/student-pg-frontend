@@ -1,0 +1,77 @@
+.verification-container {
+    min-height: 100vh;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .verification-box {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .verification-box h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .upload-form input[type="file"] {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    margin-bottom: 1rem;
+  }
+  
+  .upload-form button {
+    padding: 0.8rem 1.5rem;
+    background: #00b894;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .upload-form button:hover {
+    background: #019870;
+  }
+  
+  .status-tag {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+  
+  .status-tag.pending {
+    background: #fff3cd;
+    color: #856404;
+  }
+  
+  .status-tag.approved {
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  .status-tag.rejected {
+    background: #f8d7da;
+    color: #721c24;
+  }
+  
+  .upload-message {
+    margin-top: 1rem;
+    color: #444;
+    font-weight: 500;
+  }
+  

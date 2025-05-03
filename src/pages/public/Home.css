@@ -1,0 +1,106 @@
+/* Layout and Background */
+.home-container {
+    padding: 2rem;
+    background: linear-gradient(to right, #f9fafc, #eef2f7);
+    min-height: 100vh;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, #ffffff, #dfe9f3);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    animation: slideInUp 0.8s ease;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Features Section */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+  
+  .feature-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  }
+  
+  .delay-1 {
+    animation-delay: 0.3s;
+  }
+  
+  .delay-2 {
+    animation-delay: 0.6s;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+    .cta-button {
+      width: 100%;
+      display: block;
+    }
+  }
+  
